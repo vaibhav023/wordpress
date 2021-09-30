@@ -6,8 +6,8 @@ files:
 
 
 hooks:
-  ApplicationStop:
-         - location: /scripts/stop_script.sh
+   ApplicationStop:
+         - location: /script/stop_script.sh
            timeout: 300
            runas: root
 
