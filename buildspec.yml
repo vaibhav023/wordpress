@@ -21,13 +21,13 @@ phases:
         - sed -i 's/password_here/'$DB_Password'/' wp-config.php
         - sed -i 's/localhost/'$DB_Host'/' wp-config.php
         - sed -i 's/put your unique phrase here1/'$AUTH_KEY'/' wp-config.php
-        - sed -i 's/put your unique phrase here2/'SECURE_AUTH_KEY'/' wp-config.php
-        - sed -i 's/put your unique phrase here3/'LOGGED_IN_KEY'/' wp-config.php
-        - sed -i 's/put your unique phrase here4/'NONCE_KEY'/' wp-config.php
-        - sed -i 's/put your unique phrase here5/'AUTH_SALT'/' wp-config.php
-        - sed -i 's/put your unique phrase here6/'SECURE_AUTH_SALT'/' wp-config.php
-        - sed -i 's/put your unique phrase here7/'LOGGED_IN_SALT'/' wp-config.php
-        - sed -i 's/put your unique phrase here8/'NONCE_SALT'/' wp-config.php
+        - sed -i 's/put your unique phrase here2/'$SECURE_AUTH_KEY'/' wp-config.php
+        - sed -i 's/put your unique phrase here3/'$LOGGED_IN_KEY'/' wp-config.php
+        - sed -i 's/put your unique phrase here4/'$NONCE_KEY'/' wp-config.php
+        - sed -i 's/put your unique phrase here5/'$AUTH_SALT'/' wp-config.php
+        - sed -i 's/put your unique phrase here6/'$SECURE_AUTH_SALT'/' wp-config.php
+        - sed -i 's/put your unique phrase here7/'$LOGGED_IN_SALT'/' wp-config.php
+        - sed -i 's/put your unique phrase here8/'$NONCE_SALT'/' wp-config.php
 artifacts:
         files:
             - '**/*'
