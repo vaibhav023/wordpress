@@ -58,7 +58,9 @@ define( 'LOGGED_IN_SALT',   'HEsAm)yZ_q*cw<K>GiG/?^?B3UB&w0?:2H<t`}.PoT*n=2<d2_:
 define( 'NONCE_SALT',       'me`oq|:OX+/)uIZ1`|F;F.BAjrYH}).xz~Y4,_U6r%N_9FBJ{b@X~Fy5rQ9GXCSu' );
 
 /**#@-*/
-
+define('WP_HOME','http://52.23.188.137');
+define('WP_SITEURL','http://52.23.188.137');
+if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)  $_SERVER['HTTPS']='on';
 /**
  * WordPress database table prefix.
  *
